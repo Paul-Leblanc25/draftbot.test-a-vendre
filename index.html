@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DraftBot - Le bot ultime</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset et fonts */
+        * {margin:0; padding:0; box-sizing:border-box;}
+        body {font-family: 'Roboto', sans-serif; background:#f5f5f5; color:#333;}
+        a {text-decoration:none; color: inherit;}
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #4e54c8, #8f94fb);
+            padding: 20px 50px;
+            display:flex; justify-content: space-between; align-items:center;
+            color:white;
+        }
+        header .logo {font-size: 24px; font-weight:bold;}
+        nav a {margin-left: 30px; font-weight:500; transition:0.3s;}
+        nav a:hover {opacity:0.8;}
+
+        /* Hero */
+        .hero {
+            display:flex; flex-direction:column; justify-content:center; align-items:center;
+            text-align:center; padding:100px 20px;
+            background: url('https://i.imgur.com/YoV8zZQ.png') no-repeat center center/cover;
+            color:white;
+        }
+        .hero h1 {font-size: 48px; margin-bottom:20px;}
+        .hero p {font-size: 20px; margin-bottom:30px;}
+        .hero .btn {padding:15px 30px; background:#fff; color:#4e54c8; font-weight:bold; border-radius:8px; transition:0.3s;}
+        .hero .btn:hover {opacity:0.9;}
+
+        /* Sections */
+        section {padding:80px 20px; max-width:1200px; margin:0 auto;}
+        .section-title {text-align:center; font-size:32px; margin-bottom:50px; color:#4e54c8;}
+        .features {display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:30px;}
+        .feature-card {background:white; padding:30px; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.1); text-align:center; transition:0.3s;}
+        .feature-card:hover {transform: translateY(-10px);}
+
+        /* Footer */
+        footer {background:#333; color:white; text-align:center; padding:40px 20px;}
+        footer a {color:#8f94fb; margin:0 10px; transition:0.3s;}
+        footer a:hover {opacity:0.8;}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">DraftBot</div>
+        <nav>
+            <a href="#features">Fonctionnalités</a>
+            <a href="#commands">Commandes</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Bienvenue sur DraftBot</h1>
+        <p>Le bot Discord ultime pour gérer vos équipes et jouer sans limite !</p>
+        <a href="#features" class="btn">Découvrir</a>
+    </div>
+
+    <section id="features">
+        <h2 class="section-title">Fonctionnalités</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>Gestion d'équipe</h3>
+                <p>Créez, gérez et entraînez vos équipes directement sur Discord.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Commandes faciles</h3>
+                <p>Des commandes intuitives pour tout contrôler en un clin d'œil.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Évènements</h3>
+                <p>Participez à des tournois et évènements automatiques.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Statistiques détaillées</h3>
+                <p>Suivez la progression de vos équipes et joueurs avec précision.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="commands">
+        <h2 class="section-title">Commandes principales</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>!team</h3>
+                <p>Créer et gérer vos équipes facilement.</p>
+            </div>
+            <div class="feature-card">
+                <h3>!match</h3>
+                <p>Organiser des matchs rapidement avec vos amis.</p>
+            </div>
+            <div class="feature-card">
+                <h3>!stats</h3>
+                <p>Voir les statistiques détaillées de vos joueurs et équipes.</p>
+            </div>
+            <div class="feature-card">
+                <h3>!event</h3>
+                <p>Participer à des tournois et évènements automatiques.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>Rejoignez notre Discord pour tout savoir : <a href="#">Discord</a></p>
+        <p>&copy; 2025 DraftBot. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
